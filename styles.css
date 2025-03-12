@@ -1,0 +1,235 @@
+/* Общие стили для страницы */
+body {
+    font-family: 'Manrope', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    color: #000000;
+}
+
+/* Заголовки */
+h1, h2, h3 {
+    font-family: 'Manrope', sans-serif;
+    margin: 0;
+}
+
+/* Стили для кнопок вкладок */
+.tab-btn {
+    cursor: pointer;
+    transition: background-color 0.3s;
+    padding: 6px 16px;
+    font-size: 14px;
+    border-radius: 50px;
+    border: 1px solid #ddd;
+    font-weight: bold;
+}
+
+.tab-btn:hover {
+    background-color: #e5e5e5;
+}
+
+/* Стили для активных вкладок */
+.tab-content {
+    display: none;
+}
+.active-tab {
+    display: block;
+}
+
+/* Стили для бокового меню */
+.sidebar {
+    position: fixed;
+    left: -300px;
+    top: 0;
+    height: 100vh;
+    width: 300px;
+    background: white;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    transition: left 0.3s ease-in-out;
+    border-radius: 0 20px 20px 0;
+    z-index: 50;
+}
+
+.sidebar.open {
+    left: 0;
+}
+
+/* Кнопка меню для мобильной версии */
+.menu-btn {
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    background: transparent;
+    color: black;
+    font-size: 24px;
+    cursor: pointer;
+    border: none;
+}
+
+/* Кнопка закрытия бокового меню */
+.close-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: black;
+    color: white;
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/* Оверлей для бокового меню */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    display: none;
+    z-index: 40;
+}
+
+.overlay.active {
+    display: block;
+}
+
+/* Стили для хедера */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: white;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Стили для навигации */
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    font-weight: bold;
+}
+
+/* Стили для секций */
+.px-6 {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+
+.py-12 {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.text-4xl {
+    font-size: 2.5rem;
+}
+
+.mt-4 {
+    margin-top: 1rem;
+}
+
+.font-manrope {
+    font-family: 'Manrope', sans-serif;
+}
+
+/* Стили для изображений */
+img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Стили для карточек проектов */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+}
+
+.bg-gray-100 {
+    background-color: #f7fafc;
+}
+
+.p-4 {
+    padding: 1rem;
+}
+
+.rounded-lg {
+    border-radius: 8px;
+}
+
+.text-black {
+    color: black;
+}
+
+.font-bold {
+    font-weight: bold;
+}
+
+.text-xl {
+    font-size: 1.25rem;
+}
+
+.mt-2 {
+    margin-top: 0.5rem;
+}
+
+/* Стили для футера */
+footer {
+    background-color: white;
+    padding: 12px 6px;
+    border-top: 1px solid #e5e5e5;
+}
+
+footer .max-w-screen-xl {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+footer .grid {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+}
+
+footer h3 {
+    font-weight: bold;
+}
+
+footer ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+footer ul li {
+    margin-bottom: 8px;
+}
+
+footer p {
+    margin-bottom: 8px;
+}
+
+footer .font-light {
+    font-weight: lighter;
+}
+
+footer .font-bold {
+    font-weight: bold;
+}
+
+/* Социальные сети и контактная информация */
+footer .social-links ul {
+    padding: 0;
+    margin: 0;
+}
+
+footer .social-links li {
+    margin-bottom: 8px;
+}
