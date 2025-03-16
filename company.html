@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>О компании</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css"> <!-- Подключаем стили -->
+</head>
+<body class="bg-white text-black">
+    
+    <!-- Хедер -->
+    <header class="header">
+        <h1 class="text-2xl font-bold ml-12"><a href="index.html">ArtelCraft</a></h1>
+        <nav class="nav-links flex space-x-0">
+            <a href="index.html" class="tab-btn border border-gray-300 font-bold px-2 py-1">Готовые объекты</a>
+            <a href="projects.html" class="tab-btn border border-gray-300 font-bold px-2 py-1">Проекты</a>
+            <a href="services.html" class="tab-btn border border-gray-300 font-bold px-2 py-1">Услуги</a>
+            <a href="company.html" class="tab-btn border border-gray-300 font-bold px-2 py-1">Компания</a>
+            <a href="contact.html" class="tab-btn border border-gray-300 font-bold px-2 py-1">Контакты</a>
+        </nav>
+    </header>
+
+    <!-- Раздел "О компании" -->
+    <section class="px-6 py-12">
+        <h2 class="text-4xl font-extrabold leading-tight font-manrope text-center">
+            О компании ArtelCraft
+        </h2>
+        <p class="text-xl font-manrope text-center mt-4 max-w-3xl mx-auto">
+            Мы создаем деревянные дома и бани, сочетающие в себе **традиционные технологии ручной рубки** и современные инженерные решения. 
+            Наша цель — построить для вас **дом мечты**, который будет теплым, надежным и прослужит не одно поколение.
+        </p>
+
+        <!-- Блок преимуществ -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
+            <div class="advantage-card bg-gray-100 p-6 rounded-lg shadow-lg text-center">
+                <h3 class="text-2xl font-bold">Натуральные материалы</h3>
+                <p class="text-lg mt-2">Используем **северную сосну и кедр** — это гарантия долговечности и уюта в вашем доме.</p>
+            </div>
+
+            <div class="advantage-card bg-gray-100 p-6 rounded-lg shadow-lg text-center">
+                <h3 class="text-2xl font-bold">Традиционные технологии</h3>
+                <p class="text-lg mt-2">Ручная рубка без использования клея и химии позволяет сохранить **естественную прочность дерева**.</p>
+            </div>
+
+            <div class="advantage-card bg-gray-100 p-6 rounded-lg shadow-lg text-center">
+                <h3 class="text-2xl font-bold">Индивидуальные проекты</h3>
+                <p class="text-lg mt-2">Мы создаем дома под ваши задачи, учитывая каждую деталь — от архитектуры до интерьера.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Раздел "Наша команда" -->
+    <section class="px-6 py-12 bg-gray-50">
+        <h2 class="text-4xl font-extrabold leading-tight font-manrope text-center">Наша команда</h2>
+        <p class="text-xl font-manrope text-center mt-4 max-w-3xl mx-auto">
+            За каждым домом, который мы строим, стоит команда **профессионалов, увлеченных своим делом**.  
+            Архитекторы, инженеры, мастера по дереву — мы работаем вместе, чтобы создавать уникальные проекты.
+        </p>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
+            <div class="team-card text-center">
+                <img src="images/team1.jpg" alt="Сотрудник 1" class="w-40 h-40 rounded-full mx-auto">
+                <h3 class="text-2xl font-bold mt-4">Иван Петров</h3>
+                <p class="text-lg">Главный архитектор</p>
+            </div>
+
+            <div class="team-card text-center">
+                <img src="images/team2.jpg" alt="Сотрудник 2" class="w-40 h-40 rounded-full mx-auto">
+                <h3 class="text-2xl font-bold mt-4">Анна Смирнова</h3>
+                <p class="text-lg">Директор по строительству</p>
+            </div>
+
+            <div class="team-card text-center">
+                <img src="images/team3.jpg" alt="Сотрудник 3" class="w-40 h-40 rounded-full mx-auto">
+                <h3 class="text-2xl font-bold mt-4">Дмитрий Иванов</h3>
+                <p class="text-lg">Инженер-проектировщик</p>
+            </div>
+        </div>
+    </section>
+
+    <script src="scripts.js"></script> <!-- Подключаем файл скриптов -->
+</body>
+</html>
