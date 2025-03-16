@@ -273,3 +273,41 @@ a.bg-black {
 a.bg-black:hover {
     background-color: #333333;
 }
+/* Карточки преимуществ */
+.advantage-card {
+    background-color: #f9fafb;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.advantage-card h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 1rem;
+}
+
+.advantage-card p {
+    font-size: 1rem;
+    margin-top: 0.5rem;
+}
+
+/* Карточки команды */
+.team-card img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.team-card h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 1rem;
+}
+
+.team-card p {
+    font-size: 1rem;
+    margin-top: 0.5rem;
+}
